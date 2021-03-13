@@ -8,9 +8,17 @@
 import SwiftUI
 
 struct ContentView: View {
+    let array = ["Fred", "Astaire","Ginger", "Rogers"]
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView{
+            List{
+                Text("Hello, world!")
+                    .padding()
+                Text("Hello, world!")
+                    .padding()
+            }.navigationTitle("strings")
+        }
+        
     }
 }
 
